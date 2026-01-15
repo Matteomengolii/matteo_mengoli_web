@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>matteo mengoli portfolio/ava</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="ava.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar-fisso">
+        <button class="btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLaterale">
+            [+]
+        </button>
+    </nav>
+
+    <div class="offcanvas offcanvas-end custom-menu" tabindex="-1" id="menuLaterale">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html #Works">Works</a></li>
+                <li><a href="About.html">About</a></li>
+                <li class="contact-item"><a href="mailto:matteomngl@gmail.com" style="font-size: 18px;">Email</a></li>
+                <li class="contact-item"><a href="https://instagram.com/matteemengo" target="_blank" style="font-size: 18px;">Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="layout">
+        <h1 id="titolo" class="titolo">AVA</h1>
+        <h2>(realización del vídeo)</h2>
+        <p class="testo Uno">"AVA" (Artificial Virtual Assistant) es un asistente virtual que ayuda a los trabajadores en el mantenimiento gracias a la realidad aumentada.</p>
+        <div class="video-container img A">
+            <video id="mioVideo" autoplay muted loop playsinline class="img A">
+                <source src="img/AVA Artificial Virtual Assistant.mp4" type="video/mp4">
+            </video>
+            <button id="audioToggle">SOUND ON</button>
+        </div>
+        <p class="testo Due">Durante este proyecto se llevó a cabo una colaboración con «Marcegaglia», una gran empresa metalúrgica de Rávena, cuyos directivos y empleados del departamento de mantenimiento se prestaron a realizar algunas entrevistas con el objetivo de crear un concepto de sistema virtual interactivo para la asistencia durante el trabajo y la formación, a través de la realidad aumentada. <br>Además del diseño del sistema y las interfaces, el resultado final fue un vídeo promocional del sistema AVA, realizado con grabaciones de vídeo reales y escenas animadas con Blender.</p>
+        <h3 class="titoloPar">AVATAR</h3>
+        <img src="img/ava laterale.png" alt="" class="img B">
+        <img src="img/AVA.png" alt="" class="img C">
+        <p class="testo Tre">Una icosfera generada con Geometry Nodes, compuesta por pequeñas icosferas situadas en sus vértices. Se aplica un sombreador transparente a la geometría, mientras que la iluminación violeta proviene de una luz puntual interna.</p>
+        <img src="img/Immagine 2025-07-08 123312.jpg" alt="" class="img D">
+        <img src="img/Immagine 2025-07-10 112357.jpg" alt="" class="img E">
+        <p class="testo Quattro"> Una wave texture, modulada por parámetros que incluyen un nodo Value conectado al espectro de audio, sincroniza sus pulsaciones con la música.</p>
+        <h3 class="titoloPar">GEOMETRÍA INTERNA</h3>
+        <img src="img/dati.png" alt="" class="img F">
+        <p class="testo Cinque"> Para la geometría interna se utilizó una cuadrícula con una subdivisión de 25, a la que se le aplicó una esfera como objeto secundario. Mediante la instanciación de los vértices y la aleatorización de las transformaciones, las esferas se distribuyen de forma variada por la cuadrícula. A la cuadrícula se le aplicó un modificador Wireframe y un sombreador Emission de color púrpura para crear una estructura luminosa y dinámica.</p>
+        <h3 class="titoloPar">GAFAS</h3>
+        <img src="img/gafas1.jpg" alt="" class="img G">
+        <img src="img/gafas2.png" alt="" class="img H">
+        <img src="img/oknodi shader occhiali raggi x.jpg" alt="" class="img I">
+        <p class="testo Sei"> Modelado de monturas, lentes y cámaras en Blender. <br>La transición del sombreador sólido al de rayos X se realiza mediante un Mix Shader, animando el valor del Factor de 1 a 0.</p>
+        <h3 class="titoloPar">CHATBOT</h3>
+        <img src="img/cell motion blur.png" alt="" class="img J">
+        <img src="img/cell2.png" alt="" class="img K">
+        <img src="img/cell3.png" alt="" class="img L">
+        <p class="testo Sette"> Para crear la escena de la interfaz del chatbot para el móvil, se aplicó la textura de las pantallas al modelo del smartphone. <br>Los movimientos de la cámara siguen constantemente al sujeto iluminado por dos luces laterales, con un desenfoque de movimiento de 1/60s para conseguir un efecto de movimiento más realista.</p>
+        <p class="testo Otto">Team:<br>Matteo Mengoli,<br>Filippo Tasquier,<br>Ginevra Angrisani,<br>Leonardo Oliver,<br>Lorenzo Rosini</p>
+        <div class="footer-contatti">
+            <p class="testo">Te gusta el proyecto?</p>
+            <div class="links">
+                <a href="mailto:matteomngl@gmail.com">Email</a>
+                <a href="https://instagram.com/matteemengo" target="_blank">Instagram</a>
+        </div>
+    </div>
+
+    <script src="ava.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>
